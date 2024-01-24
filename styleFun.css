@@ -1,0 +1,211 @@
+
+.body-fun {
+    background-image: url("Media/background1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    color: #000305;
+    font-size: 87%;
+    font-family: Arial, "lucida Sans Unicode";
+    line-height: 1.5;
+    text-align: left;
+    margin: 10px auto;
+    width: 70%;
+    clear: both;
+}
+
+            /*------------------------------- MAIN HEADER --------------------------------------*/
+
+.mainheader img {
+    width: 100%;
+}
+.mainheader nav {
+    background-color: #e74c3c;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+.mainheader nav ul {
+    text-align: center;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.mainheader nav ul li{
+    display: inline;
+}
+
+.mainheader a{
+    text-decoration: none;
+}
+
+.mainheader a:link, .mainheader a:visited{
+    color: white;
+    padding: 10px 40px;
+    display: inline-block;
+    height: 20px;
+}
+.mainheader a:hover, .mainheader a:active{
+    color: white;
+    background-color: #f58233;
+    text-shadow: none;
+
+}
+
+            /*------------------------------- MAIN CONTENT --------------------------------------*/
+
+.mainContent{
+    width: 70%;
+    float: left;
+}
+
+.top-content{
+    background-color: #fff;
+    padding: 3%;
+    margin-top: 3%;
+    border-radius: 5px;
+}  
+
+.top-content h2 {
+    color: #e74c3c ;
+}
+
+.post-info{
+    font-size: 90%;
+    color: #999;
+    font-style: italic;
+    margin-top: -20px;
+}
+
+.post-img{
+    width: 100%;
+}
+
+figure{
+    margin: 25px 0;
+    font-size: 80%;
+    color: #999;
+}
+
+            /*--------------------------- SIDE BAR ------------------------------------*/
+
+.theSidebar{
+    width: 24%;
+    margin: 2% 0 0 2%;
+    float: left;
+    padding: 2%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.theSidebar h1{
+    color: #f58233;
+}
+
+            /*------------------------------- FOOTER --------------------------------------*/
+
+.footer-fun {
+    margin-top: 20px;
+    
+    float: left;
+    width: 100%;
+    background-color: #e74c3c;
+    height: 60px;
+    border-radius: 5px;
+}
+
+.footer-fun p{
+    text-align: center;
+    color: #fff;
+    width: 90%;
+}
+
+#end{
+    text-decoration: none; 
+    
+}
+
+
+
+/*--------------------------------------------  FOR SMALLER SCREEN  ----------------------------------------------------*/
+
+@media screen and (max-width: 1210px){
+    .body-fun{
+        width: 88%;
+        font-size: 90%;
+    
+    } 
+
+    .mainheader nav {
+        font-size: 90%;
+    }
+
+    .mainheader a:link, .mainheader a:visited{
+        
+        padding: 10px 20px;
+    }
+
+    .theSidebar{
+        font-size: 90%;
+    }
+
+}
+
+
+@media screen and (max-width: 700px){
+    .body-fun{
+        width: 90%;
+        font-size: 80%;
+    
+    } 
+
+    .mainheader nav {
+        font-size: 80%;
+    }
+
+    .mainheader a:link, .mainheader a:visited{
+        
+        padding: 10px 10px;
+    }
+
+    .theSidebar{
+        font-size: 70%;
+    }
+
+}    
+   /*--------------------------------------------  FOR MOBILE  ---------------------------------------------------------*/ 
+
+
+
+@media screen and (max-width: 480px){
+    .body-fun{
+        width: 90%;
+        font-size: 95%;
+    
+    } 
+
+    .mainheader nav {
+        height: 170px;   
+    }
+    
+    .mainheader ul {
+        width: 100%;
+        padding: 0;
+    }
+
+    .mainheader a:link, .mainheader a:visited{
+        display: block;
+        padding: 7px 40px;
+    }
+    
+    .mainContent{
+        width: 100%;
+    }
+
+    .theSidebar{
+         width: 94%;
+       
+    }
+
+
+}

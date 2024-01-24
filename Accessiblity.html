@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="head">Accessibility</div>
+        <ul class="links">
+            <li><a href="./index.html">Welcome</a></li>
+            <li><a href="./Reflection.html">Reflection-essay</a></li>
+            <li><a href="./Accessiblity.html">Accessibility</a></li>
+            <li><a href="./Topical-information.html">Topical information</a></li>
+            <li><a href="./Fun.html">Fun</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            Menu
+        </label>
+    </nav>
+    <div id="acc_container">
+        <div id="acc_box">
+            <h1>Presentation of Accesability</h1>
+            <p>Before making our site for the final assignment,
+                we discussed what the site had to contain for it to be accessible as possible.
+                We concluded that we had to focus on the following three things:
+            </p>
+            <ul class="acc_li">
+                <li>Legibility</li>
+                <li>Easy to navigate</li>
+                <li>Easy to understand</li>
+            </ul>
+            <p>When making the website, we made sure to implement these points as best as possible.
+                For instance, we made sure that the background color was distinguishable from the foreground,
+                and that text background was a color that was high in contrast to the text colors.
+                Navigation was one of the things that we used some time to do it right.
+                We made sure that it was not large enough, but also easy to navigate/understand.
+                We also implemented a version of the navigation bar for mobile devices that was.
+                Most if not all the pictures that we used in our website either has an alternative text or a description for visually impaired users.
+                We also used a font that was both easy to read, but also easy to understand.
+                Headers for the sites are both relevant and explains the text.
+                The last thing that we implemented was making the paragraph look neater by using text-align property in CSS.
+            </p>
+            <p>After finishing the site, we checked the code for accessibility and validated it by using automated tests.
+                We ended up using mainly <a href="https://wave.webaim.org/report#/https://web-entwicklung.github.io/Final_assignment/index.html" title="Go to WAVE" target="_blank">WAVE</a> (Web Accessibility Evaluation Tool) to checking for accessibility, and <a href="https://validator.w3.org/" title="Go to W3 validator" target="_blank">W3’s validating tool</a> to validate our code.
+            </p>
+            <p>When using WAVE, we only got a few alerts,
+                but these were neglected because it was alerting about the pictures’ alternative text is the same as the description of the picture.
+            </p>
+            <figure>
+                <img src="Media/WAVE_Validator.png" alt="Picture of WAVE checker">
+                <figcaption>WAVE checker</figcaption>
+            </figure>
+            <p>When running the code through W3 validator, we also got a few warnings.
+                This time, the warnings were about having div elements inside a label (menu button).
+                We decided to leave it in because it was the simplest way to make a menu button without using JavaScript (that we have not learned yet)
+            </p>
+            <figure>
+                <img src="Media/w3_validator.png" alt="Picture of w3 validator">
+                <figcaption>W3 validator</figcaption>
+
+            </figure>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
